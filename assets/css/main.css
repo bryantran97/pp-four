@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+body, html {
+	height: 100%;
+	background-color: #F6F4F5;
+	color: black;
+	font-family: 'Amatic SC';
+	font-weight: 700;
+}
+
+#bear {
+	position: relative;
+	top: -70px;
+	width: 350px;
+	height: 350px;
+	z-index: -1;
+}
+
+.left-col,
+.right-col {
+	margin-top: 160px;
+	text-align: center;
+	z-index: 1;
+}
+
+.left-col {
+	position: relative;
+	right: 25px;
+}
+
+.right-col {
+	position: relative;
+}
+
+
+
+h1 {
+	font-size: 50px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+@media (max-width: 767px) {
+	.left-col,
+	.right-col {
+		left: 0;
+		right: 0;
+		padding: 0;
+	}
+
+	.left-col {
+		margin: 50px auto -100px auto;
+	}
+
+	.right-col {
+		margin-top: 5px;
+		padding: 0 20px;
+	}
+}
