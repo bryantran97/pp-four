@@ -1,48 +1,124 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 
-body, html {
-	height: 100%;
-	background-color: #F6F4F5;
-	color: black;
+/* ======================================= */
+/*                  GLOBALS                */
+/* ======================================= */
+
+body, 
+html{
 	font-family: 'Amatic SC';
 	font-weight: 700;
+
+	height: 100%;
+
+	background-color: #F6F4F5;
+	color: black;
 }
 
-#bear {
-	position: relative;
-	top: -70px;
-	width: 350px;
-	height: 350px;
-	z-index: -1;
+h1,
+h2,
+h3 { /* Adds text-shadow to all the text in front page */
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.left-col,
-.right-col {
-	margin-top: 160px;
-	text-align: center;
-	z-index: 1;
-}
-
-.left-col {
-	position: relative;
-	right: 25px;
-}
-
-.right-col {
-	position: relative;
-}
-
-
-
+/* Title */
 h1 {
 	font-size: 50px;
+	color: #545454;
 }
 
+/* Mini-Bio */
 h3 {
 	font-size: 25px;
 }
 
-@media (max-width: 767px) {
+/* Panda Bear GIF image on front page */
+#bear {
+	content: url('../gifs/tripanda.gif');
+	height: 300px; width: 200px;
+	position: relative;
+	top: 5px; /* Push it up a bit (Position MUST be RELATIVE) */
+
+	z-index: -1; /* Put image behind any text */
+}
+
+/* ======================================= */
+/*                BOTH COLUMN              */
+/* ======================================= */
+
+.left-col,
+.right-col { /* Make it so text is centered and it's sitting above any other content */
+	margin-top: 160px;
+	text-align: center;
+
+	z-index: 1;
+}
+
+/* ======================================= */
+/*                LEFT COLUMN              */
+/* ======================================= */
+
+
+
+/* ======================================= */
+/*                RIGHT COLUMN             */
+/* ======================================= */
+
+/* Vertical border next to content */
+.separator {
+    height: 100%; width: 2px;
+
+    position: absolute;
+    left: 0; /* Can only do this if it has a position */
+    top: 0;
+
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+    background: rgba(204,204,204,1);
+}
+
+/* Move text right a bit of the vertical border */
+.right-col h3 {
+	position: relative;
+	left: 20px;
+}
+
+/* For all of the clickable content on right column*/
+.right-col h2 {
+	width: 100px;
+	padding-bottom: 20px;
+
+	position: relative;
+	left: 35px;
+
+	font-size: 37px;
+	text-align: left;
+	color: #545454;
+
+	transition: left .5s;
+	cursor: pointer;
+}
+
+/* Hovering (move right) animation for clickable content */
+#work:hover,
+#projects:hover,
+#contact:hover,
+#resume:hover,
+#hireme:hover {
+	left: 50px;
+}
+
+/* ======================================= */
+/*               MEDIA QUERIES             */
+/* ======================================= */
+@media (max-width: 767px) { /* For small devices */
+	#bear {
+		top: -70px;
+		content: url('../gifs/drawing.gif');
+		height: 300px;
+		width: 300px;
+	}
+	/* Remove any manual pushing/padding on right/left columns */
 	.left-col,
 	.right-col {
 		left: 0;
@@ -50,12 +126,27 @@ h3 {
 		padding: 0;
 	}
 
+	/* Make sure left column is sitting on top of right col and is spaced nicely */
 	.left-col {
 		margin: 50px auto -100px auto;
 	}
 
+	/* Making sure right-col is spaced nicely */
 	.right-col {
 		margin-top: 5px;
-		padding: 0 20px;
+		padding: 0 20px; /* So text doesn't touch both sides of the browser's window */
+	}
+
+	/* Remove the vertical border when small device */
+	.separator {
+		display: none;
+	}
+
+	.right-col h3 {
+		left: 0;
+	}
+
+	.right-col h2 {
+		left: 15px;
 	}
 }
