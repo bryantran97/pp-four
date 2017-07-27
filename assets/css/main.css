@@ -4,6 +4,15 @@
 /*                  GLOBALS                */
 /* ======================================= */
 
+#overlay { /* White-noise overlay in background */
+	position: fixed;
+	min-height: 100%;
+	width: 100%;
+	background-image: url('../gifs/noise.gif');
+	z-index: 1;
+	opacity: 0.065;
+}
+
 body, 
 html{
 	font-family: 'Amatic SC';
@@ -18,7 +27,7 @@ html{
 h1,
 h2,
 h3 { /* Adds text-shadow to all the text in front page */
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Title */
@@ -59,6 +68,7 @@ li {
 	display: inline;
 	padding-left: 10px;
 	padding-right: 10px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .fa-github,
@@ -142,8 +152,8 @@ div {
     top: 0;
 
     border-radius: 3px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
-    background: rgba(204,204,204,1);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    background-color: rgba(84,84,84,0.5);
 }
 
 .right-col h1 {
@@ -176,12 +186,11 @@ div {
 }
 
 /* Hovering (move right) animation for clickable content */
-#work:hover,
+#about:hover,
 #projects:hover,
-#contact:hover,
 #resume:hover,
 #hireme:hover {
-	left: 50px;
+	left: 40px;
 }
 
 
@@ -215,10 +224,12 @@ div {
 
 	#bear { /* Switch to a different bear gif and move it down a bit */
 		top: -70px;
-		content: url('../gifs/drawing.gif');
-		height: 300px;
-		width: 300px;
+		content: url('../img/cutepanda.png');
+		height: 200px;
+		width: 200px;
 		left: 0;
+		margin-top: 60px;
+		margin-bottom: 45px;
 	}
 
 	/* Remove any manual pushing/padding on right/left columns */
