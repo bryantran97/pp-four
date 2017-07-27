@@ -38,13 +38,14 @@ h3 {
 	height: 300px; width: 200px;
 	position: relative;
 	top: 25px; /* Push it up a bit (Position MUST be RELATIVE) */
+	left: 45px;
 
 	z-index: -1; /* Put image behind any text */
 }
 
 .main-page {
 	position: relative;
-	right: 65px;
+	right: 80px;
 }
 
 li {
@@ -52,7 +53,7 @@ li {
 }
 
 #icons {
-	margin-left: 100px;
+	margin-left: 110px;
 }
 #icons li {
 	display: inline;
@@ -73,6 +74,16 @@ li {
     animation: fa-spin .7s;
 }
 
+
+div { 
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Not implemented yet */
+    -o-user-select: none;
+    user-select: none;    
+}
 /* ======================================= */
 /*                BOTH COLUMN              */
 /* ======================================= */
@@ -80,7 +91,7 @@ li {
 .left-col,
 .right-col { /* Make it so text is centered and it's sitting above any other content */
 	position: relative;
-	margin-top: 160px;
+	margin-top: 100px;
 	text-align: center;
 
 	z-index: 1;
@@ -107,7 +118,7 @@ li {
 
 .left-col h1 {
 	position: relative;
-	left: 40px;
+	left: 45px;
 }
 
 
@@ -117,7 +128,9 @@ li {
 /* ======================================= */
 
 .right-col {
+	text-align: left;
 	margin-bottom: 50px;
+	top: -20px;
 }
 
 /* Vertical border next to content */
@@ -133,6 +146,13 @@ li {
     background: rgba(204,204,204,1);
 }
 
+.right-col h1 {
+	position: relative;
+	text-align: left;
+	left: 20px;
+	font-size: 35px;
+}
+
 /* Move text right a bit of the vertical border */
 .right-col h3 {
 	position: relative;
@@ -142,16 +162,16 @@ li {
 /* For all of the clickable content on right column*/
 .right-col h2 {
 	width: 100px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 
 	position: relative;
-	left: 35px;
+	left: 20px;
 
 	font-size: 37px;
 	text-align: left;
 	color: #545454;
 
-	transition: left .5s;
+	transition: left .3s;
 	cursor: pointer;
 }
 
@@ -163,7 +183,6 @@ li {
 #hireme:hover {
 	left: 50px;
 }
-
 
 
 /* ======================================= */
@@ -181,6 +200,10 @@ li {
         -o-transform: rotate(0deg);
 	}
 
+	.left-col h1 {
+		left: 0;
+	}
+
 	#icons { /* Make icons turn perfectly horizontal and give them space */
 		position: relative;
 		margin: 20px 45px 15px 0;
@@ -195,6 +218,7 @@ li {
 		content: url('../gifs/drawing.gif');
 		height: 300px;
 		width: 300px;
+		left: 0;
 	}
 
 	/* Remove any manual pushing/padding on right/left columns */
@@ -214,18 +238,18 @@ li {
 	.right-col {
 		margin-top: 5px;
 		padding: 0 20px 50px 20px; /* So text doesn't touch both sides of the browser's window */
+		top: 0;
+	}
+
+	/* Remove any left-pushing when on smaller devices */
+	.right-col h1,
+	.right-col h2,
+	.right-col h3 {
+		left: 0;
 	}
 
 	/* Remove the vertical border when small device */
 	.separator {
 		display: none;
-	}
-
-	.right-col h3 {
-		left: 0;
-	}
-
-	.right-col h2 {
-		left: 15px;
 	}
 }
