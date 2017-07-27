@@ -37,9 +37,40 @@ h3 {
 	content: url('../gifs/tripanda.gif');
 	height: 300px; width: 200px;
 	position: relative;
-	top: 5px; /* Push it up a bit (Position MUST be RELATIVE) */
+	top: 25px; /* Push it up a bit (Position MUST be RELATIVE) */
 
 	z-index: -1; /* Put image behind any text */
+}
+
+.main-page {
+	position: relative;
+	right: 65px;
+}
+
+li {
+	list-style: none;
+}
+
+#icons {
+	margin-left: 100px;
+}
+#icons li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-twitter {
+	font-size: 20px;
+	color: #545454;
+	cursor: pointer;
+}
+
+.fa-spin-hover:hover {
+    /* If you hover over it, it'll spin at .7 speed */
+    animation: fa-spin .7s;
 }
 
 /* ======================================= */
@@ -48,6 +79,7 @@ h3 {
 
 .left-col,
 .right-col { /* Make it so text is centered and it's sitting above any other content */
+	position: relative;
 	margin-top: 160px;
 	text-align: center;
 
@@ -58,11 +90,35 @@ h3 {
 /*                LEFT COLUMN              */
 /* ======================================= */
 
+.rotate {
+/* Safari */
+-webkit-transform: rotate(-15deg);
+/* Firefox */
+-moz-transform: rotate(-15deg);
+/* IE */
+-ms-transform: rotate(-15deg);
+/* Opera */
+-o-transform: rotate(-15deg);
+}
+
+.left-col {
+	left: 30px;
+}
+
+.left-col h1 {
+	position: relative;
+	left: 40px;
+}
+
 
 
 /* ======================================= */
 /*                RIGHT COLUMN             */
 /* ======================================= */
+
+.right-col {
+	margin-bottom: 50px;
+}
 
 /* Vertical border next to content */
 .separator {
@@ -108,16 +164,39 @@ h3 {
 	left: 50px;
 }
 
+
+
 /* ======================================= */
 /*               MEDIA QUERIES             */
 /* ======================================= */
 @media (max-width: 767px) { /* For small devices */
-	#bear {
+	.rotate {
+		/* Safari */
+        -webkit-transform: rotate(0deg);
+        /* Firefox */
+        -moz-transform: rotate(0deg);
+        /* IE */
+        -ms-transform: rotate(0deg);
+        /* Opera */
+        -o-transform: rotate(0deg);
+	}
+
+	#icons { /* Make icons turn perfectly horizontal and give them space */
+		position: relative;
+		margin: 20px 45px 15px 0;
+	}
+
+	.main-page { /* When it's smaller, reset the right-side pushing I added in */
+		right: 0;
+	}
+
+	#bear { /* Switch to a different bear gif and move it down a bit */
 		top: -70px;
 		content: url('../gifs/drawing.gif');
 		height: 300px;
 		width: 300px;
 	}
+
 	/* Remove any manual pushing/padding on right/left columns */
 	.left-col,
 	.right-col {
@@ -134,7 +213,7 @@ h3 {
 	/* Making sure right-col is spaced nicely */
 	.right-col {
 		margin-top: 5px;
-		padding: 0 20px; /* So text doesn't touch both sides of the browser's window */
+		padding: 0 20px 50px 20px; /* So text doesn't touch both sides of the browser's window */
 	}
 
 	/* Remove the vertical border when small device */
