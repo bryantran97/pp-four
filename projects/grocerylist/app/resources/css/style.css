@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* Roboto font embedd */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body {
+	background:#edf0f1;
+	padding:80px 0 0 0;
+}
+
+/* Give all these components the same FONT */
+body, input, button {
+	font-family: 'Roboto', sans-serif;
+}
+
+.noFill {
+	fill:none;
+}
+
+/* Top header section */
+header {
+	width: 100%; height: 80px;
+	padding: 15px;
+	position: fixed;
+	z-index: 5;
+
+	font-size:15px; font-weight:400;
+	top: 0; left: 0;
+
+	background-color:#4c5e7c;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0px, 2px, 4px, rgba(44, 62, 88, 0.15);
+}
+
+/* Input section inside header */
+header input {
+	width: 100%; height: 50px;
+	float: left;
+
+	font-size:15px; font-weight:400;
+	color: #fff;
+
+	/* Rather than putting a padding to move text over, text indent allows us to see text overflow */
+	text-indent: 18px;
+	/* Pushes text inside Input from touching button */
+	padding: 0 60px 0 0;
+
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 5px 25px 25px 5px;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+
+	/* Across all web browser platforms */
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+/* Placeholder colors inside input box in header */
+header input::-webkit-input-placeholder { /* Chrome/Safari/Opera */
+	color:rgba(255,255,255,0.75);
+}
+header input::-moz-input-placeholder { /* Firefox 19+ */
+	color:rgba(255,255,255,0.75);
+}
+header input:-moz-input-placeholder { /* Firefox 18- */
+	color:rgba(255,255,255,0.75);
+}
+header input:-ms-input-placeholder { /* IE */
+	color:rgba(255,255,255,0.75);
+}
+
+/* White circular button in header*/
+header button {
+	/* Position is absolute because no other elements will interfere */
+	width:50px; height:50px;
+	position:absolute;
+	top:15px; right:15px; /* Move it down 15px and right 15px */
+	z-index: 2;
+
+	background: #fff;
+	border-radius: 25px;
+	border: 0px;
+	box-shadow: 0px;
+	outline:none;
+	cursor: pointer;
+
+	/* Across all web browser platforms */
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+header button svg {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -8px 0 0 -8px;
+}
+
+header button svg .fill {
+	fill: #4c5e7c;
+}
+
+.container {
+	width: 100%;
+	float: left;
+	padding: 15px;
+}
+
+ul.todo {
+	width: 100%;
+	float:left;
+}
+
+ul.todo li {
+	font-size: 14px;
+	font-weight: 500;
+	color:#444;
+	line-height: 22px;
+	width: 100%;
+	float: left;
+	min-height: 50px;
+	background:#fff;
+	border-radius: 5px;
+	position: relative; /* This needs to be relative since it is the parent of the buttons */
+	padding: 14px 100px 0 14px; /* Adding on right padding so the buttons have space */
+
+	box-shadow: 0px, 2px, 4px, rgba(44, 62, 88, 0.15);
+	margin: 0 0 10px 0;
+}
+
+ul.todo li:last-of-type {
+	margin: 0;
+}
+
+/* UL button position box */
+ul.todo li .buttons {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+/* Both button boxes */
+ul.todo li .buttons button {
+	width: 50px;
+	height: 50px;
+	float: left;
+	position: relative;
+	background: none;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+	cursor: pointer;
+
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+/* Adding border between buttons */
+ul.todo li .buttons button:last-of-type:before {
+	content:'';
+	width: 1px;
+	height: 28px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	background-color: #edf0f1;
+}
+/* For the button SVG icon */
+ul.todo li .buttons button svg {
+	width: 22px;
+	height: 22px;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin:-11px 0 0 -11px;
+}
+/* Button Transition */
+ul.todo li .buttons button svg .fill {
+	-webkit-transition:fill 0.2s ease;
+	-moz-transition:fill 0.2s ease;
+	-ms-transition:fill 0.2s ease;
+	-o-transition:fill 0.2s ease;
+}
+
+/* Uncompleted Remove Button */
+ul.todo li .buttons button.remove svg .fill {
+	fill: #c0cecb;
+}
+ul.todo li .buttons button.remove:hover svg .fill {
+	fill: #e85656;
+}
+
+/* Uncompleted Completed Button */
+ul.todo li .buttons button.complete svg .fill {
+	fill: #6bbf6c;
+}
+ul.todo li .buttons button.complete svg {
+	border-radius: 11px;
+	border: 1.5px solid #6bbf6c;
+}
+ul.todo li .buttons button.complete:hover svg {
+	border-radius: 11px;
+	border: 1.5px solid #b4edb4;
+}
+ul.todo li .buttons button.complete:hover svg .fill {
+	fill: #b4edb4;
+}
+
+/* Completed Complete Button */
+
+ul.todo#completed li .buttons button.complete svg {
+	background: #6bbf6c;
+	border: 0px;
+}
+ul.todo#completed li .buttons button.complete svg .fill {
+	fill: #fff;
+}
+
+ul.todo#completed {
+	position:relative;
+	padding: 60px 0 0 0;
+}
+
+ul.todo#completed:before {
+	content:'';
+	width:150px;
+	height:1px;
+	background:#bcbcbc;
+	position:absolute;
+	top:30px;
+	left: 50%;
+	margin: 0 0 0 -75px;
+}

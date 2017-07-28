@@ -1,0 +1,88 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* Globals */
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+/* =================================== */
+/*             HEADER/STRIPE           */
+/* =================================== */
+
+h1 { /* header text */
+	font-weight: 400;
+	line-height: 1.1;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+
+	padding: 20px 0;
+	margin: 0;
+
+	background-color: steelblue;
+}
+
+#stripe { /* white stripe on page */
+	text-align: center;
+	height: 30px;
+
+	background: white;
+}
+
+button { /* New game / Easy / Hard Buttons */
+	font-size: inherit; font-weight: 700;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	color: steelblue;
+	border: none; background: none; outline: none;
+	
+	height: 100%;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+	text-transform: uppercase;
+}
+
+/* =================================== */
+/*              SQUARE BOXES           */
+/* =================================== */
+
+.container {
+	max-width: 600px;
+	margin: 75px auto;
+}
+
+.square {
+	width: 30%;
+	padding-bottom: 30%; margin: 1.66%;
+	float: left;
+	border-radius: 15%;
+
+	background: purple;
+	transition: background-color 0.6s;
+	-webkit-transition: background-color 0.6s;
+	-moz-transition: background-color 0.6s;
+}
+
+#colorDisplay {
+	font-size: 200%; font-weight: 700;
+	text-transform: uppercase;
+}
+
+.selected { /* Buttons that are selected (current mode) */
+	background: steelblue;
+	color: white;
+}

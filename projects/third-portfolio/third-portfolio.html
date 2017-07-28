@@ -1,0 +1,302 @@
+<!-- WEBSITE WAS MADE BY: BRYAN TRAN -->
+<!-- ALL CONTENT USED (SUCH AS ANIMATIONS/SMOOTH SCROLLING) WERE NOT MADE BY ME! -->
+<!-- LOOK INTO ALL THE FILES I LINKED/IMPORTED IF YOU WANT TO KNOW HOW TO USE THOSE-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- ****************************************************************** -->
+      <!--                         TYPICAL HEAD STUFF                         -->
+      <!-- ****************************************************************** -->
+      <title>Bryan Tran | Personal Website</title>
+      <link href="static/img/favicon.ico" rel="shortcut icon">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="My name is Bryan Tran :)">
+      <meta name="author" content="Bryan Tran">
+      <meta name="keywords" content="bryan,tran,bryantran,tranbryan,websites,developer,photography,design,projects,freelance">
+      <!-- ****************************************************************** -->
+      <!--                           CSS Linking                              -->
+      <!-- ****************************************************************** -->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <link href="./fontawesome/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <link rel="stylesheet" href="css/animate.css"/>
+      <link rel="stylesheet" href="css/waypoints.css"/>
+      <link rel="stylesheet" href="css/fluffy.min.css">
+      <!-- ****************************************************************** -->
+      <!--                             SCRIPTS                                -->
+      <!-- ****************************************************************** -->
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="js/waypoints.js" type="text/javascript"></script>
+      <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="js/fluffy.js"></script>
+      <script src="js/script.js"></script>
+      <!-- ****************************************************************** -->
+      <!--                        TYPED-OUT SCRIPTS                           -->
+      <!-- ****************************************************************** -->
+      <script type="text/javascript"> /* Scripts */
+         $(document).ready(function() {
+             /* *********************************************** */
+             /*               THIS CALLS FULL PAGE              */
+             /* *********************************************** */
+          $('#fullpage').fullpage({ });
+         
+             /* *********************************************** */
+             /*      THIS IS THE PARTICLE ANIMATION SCRIPT      */
+             /* *********************************************** */
+             particlesJS("particles-js", {
+               "particles": { /* Change HOW many DOTS on front page */
+                   "number": { 
+                     "value": 150,
+                     "density": {
+                       "enable": true,
+                       "value_area": 1000
+                     }
+                   },
+                   "color": { /* Color of the DOTS */
+                     "value": "#afe0b2"
+                   },
+                   "shape": {
+                     "type": "circle",
+                     "stroke": {
+                       "width": 0,
+                       "color": "#000000"
+                     },
+                   },
+                   "opacity": { /* Adjustable Opacity of the DOTS */
+                     "value": 0.7,
+                     "random": false,
+                     "anim": {
+                       "enable": true,
+                       "speed": .4,
+                       "opacity_min": 0,
+                       "sync": false
+                     }
+                   },
+                   "size": { /* Adjustable size of the DOTS */
+                     "value": 3,
+                     "random": true,
+                     "anim": {
+                       "enable": true,
+                       "speed": .2,
+                       "size_min": 0,
+                       "sync": false
+                     }
+                   },
+                   "line_linked": { /* Originally a line connecting dots, THIS disables it */
+                     "enable": false,
+                     "distance": 150,
+                     "color": "#ffffff",
+                     "opacity": 0.4,
+                     "width": 1
+                   },
+                   "move": { /* Speed of the DOTS */
+                     "enable": true,
+                     "speed": 1.5,
+                     "direction": "none",
+                     "random": true,
+                     "straight": false,
+                     "out_mode": "out",
+                     "bounce": false,
+                   }
+               },
+             });
+             $("#loading").remove();
+         });
+      </script> <!-- END of TYPED SCRIPT -->
+   </head>
+   <!-- END OF HEAD! -->
+    <div id="loading" style="height: 100%; width: 100%; background-color: white;">
+      <img src="../../assets/gifs/running.gif" style="display: block; position: relative; margin: 0 auto; top: 20%">
+      <h1 style="color: purple; text-align: center; position: relative; top: 20%; font-family: 'Open Sans';"> Loading... </h1>
+    </div>
+   <body>
+      <!-- ***********************************! IMPORTANT !***********************************  -->
+      <!-- ID MUST BE FULLPAGE for FullPage.js to work. Section = Veritcal & Slide = Horizontal -->
+      <!-- ***********************************! IMPORTANT !***********************************  -->
+      <div id="fullpage">
+         <!-- Let's script know I want to use the FullPage, One Page Scrolls -->
+         <!-- ************************************************************ -->
+         <!--                     FIRST PAGE STARTS HERE                   -->
+         <!-- ************************************************************ -->
+         <div class="section firstPage">
+            <div id="particles-js">
+               <!-- Particle is for the particle effect on front page -->
+               <div id="tint-overlay">
+                  <!-- Overlay is for the BLACK tint over front page -->
+                  <div id="fpContent">
+                     <section class="os-animation" data-os-animation="bounceInDown">
+                        <!-- Allows BOUNCE DOWN animation -->
+                        <h2>UI Designer &amp; Front-End Developer</h2>
+                     </section>
+                     <section class="os-animation" data-os-animation="fadeInDown">
+                        <!-- Allows FADE down animation -->
+                        <h1>Bryan  -  Tran</h1>
+                     </section>
+                     <section>
+                        <h3>
+                           "Bawnjourno." Press Music to listen to my current favorite song
+                           <br /> Music pauses if you press again or once you scroll down
+                        </h3>
+                     </section>
+                     <section class="os-animation buttonContainer" data-os-animation="fadeInUp">
+                        <!-- Allows FADE up animation -->
+                        <li> <a class="ghostButton projectsButton" href="#">Résumé</a> </li>
+                        <li> <a class="ghostButton aboutButton" href="#" value="PLAY" loop="true" onclick="play()">Music</a> </li>
+                        <audio id="audio" src="static/music/beirut-no-no-no.mp3"></audio>
+                     </section>
+                  </div>
+                  <!-- End of FIRST Page CONTENT -->
+               </div>
+               <!-- End of Tint Overlay -->
+            </div>
+            <!-- End of PARTICLE Overlay -->
+         </div>
+         <!-- END OF THE FIRST PAGE -->
+         <!-- ************************************************************ -->
+         <!--                    SECOND PAGE STARTS HERE                   -->
+         <!-- ************************************************************ -->
+         <div class="section secondPage">
+            <div id="container">
+               <div id="container-profile">
+                  <img src="static/img/avatar.jpg"> </img>
+                  <p>The Name's Bryan, don't forget it. COMPRENDE?</p>
+                  <p>University of Texas at Dallas <br />
+                     B.S. in Computer Science <br />
+                     (Bullshit in CS)
+                  </p>
+                  <div class="profile-icons">
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-facebook-square fa-1x fa-spin-hover"></i></a>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-camera-retro fa-1x fa-spin-hover"></i></a>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-twitter fa-1x fa-spin-hover"></i></a>
+                  </div>
+               </div>
+               <div id="container-about">
+                  <h2>How YOU Doin'?</h2>
+                  <h1>So you want to know more about me?</h1>
+                  <p>
+                     No? Well too bad I'm going to tell you more about myself anyway. My name is Bryan and I am currently studying Computer Science at the University of Texas at Dallas. I am a Junior as of August 2017. Ultimately, I want to work in the industry so I'm trying my hardest to get as much experience and knowledge as I can while I am in school. I am interested in both software &amp; web development, digital art, music, photography, and cinematography. My hobbies include jogging, programming on my free time, and playing video games with friends.
+                     <br /> <!-- Breaks to add space between paragraphs -->
+                     <br />
+                     This website is my personal portfolio that showcases some of the projects I've created or participated in. I love passionate people, so if you love developing and want to work with me let me know. I have lots of great ideas for new projects. <br />
+                     <br /> 
+                     Personal Email: bryantran97@gmail.com <br />
+                     School Email: bmt150030@utdallas.edu <br />
+                     <br />
+                     This website took a disgustingly long time to make. Also, any links that I haven't fixed yet is set to Rick Astley's 'Never Going To Give You Up' by default.
+                  </p>
+               </div>
+               <!-- End of paragraph -->
+            </div>
+            <!-- End of Second page TEXT container -->
+         </div>
+         <!-- End of Second Page -->
+         <!-- ************************************************************ -->
+         <!--                     THIRD PAGE STARTS HERE                   -->
+         <!-- ************************************************************ -->
+         <div class="section thirdPage">
+            <div id="container">
+               <h1> Projects <i class="fa fa-wrench fa-1x"></i> </h1>
+               <h3> Collection of my personal and school projects/assignments </h3>
+            </div>
+            <!-- End of Third Page Header Titles -->
+            <div id="container">
+               <div data-fluffy-container data-fluffy-options='{"showScrollbars": false, "mouseDamp": 40}'>
+                  <div data-fluffy-content>
+                     <a href="https://github.com/bryantran97/OverwatchPlayerStats">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">OverwatchStats.gg</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Competitive Stat Tracker</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/kingsrow1.jpg" alt="">
+                        </div>
+                     </a>
+                     <a href="https://github.com/bryantran97/HatersBackOff">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Haters Back Off</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Preventing further Cyber Bullying</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/antibullying.jpeg" alt="">
+                        </div>
+                     </a>
+                     <a href="https://github.com/bryantran97/Programming-Calculator">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Programming Calculator</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Education Technologies</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/calculator.jpg" alt="">
+                        </div>
+                     </a>
+                     <a href="https://www.youtube.com/watch?v=Kt6UkFtWYl8">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Crisp Rat</span>
+                           <div class="slider-description">
+                              <p class="slider-body">What would Chris Pratt Say?</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/chrispratt2.jpg" alt="">
+                        </div>
+                     </a>
+                     <a href="https://github.com/bryantran97/SecondYearAssignments">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Recent Assignments</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Compiled Works</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/school.jpg" alt="">
+                        </div>
+                     </a>
+                     <a href="https://github.com/bryantran97/Java-Script-Practice">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Home Practice</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Compiled Works</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/home.jpg" alt="">
+                        </div>
+                     </a>
+                     <a href="#">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Label Solutions Inc.</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Summer Internship</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/intern.jpg" alt="">
+                        </div>
+                     </a>
+                     <a href="#">
+                        <div class="slider-img-wrapper">
+                           <span class="slider-title">Scripting Assignments</span>
+                           <div class="slider-description">
+                              <p class="slider-body">Scripting from Linux Course</p>
+                           </div>
+                           <img class="slider-imgs" src="static/img/coding.jpg" alt="">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div id="container icons">
+                  <ul class="footer">
+                     <li><a class="github" href="https://github.com/bryantran97"><i class="fa fa-github fa-1x fa-spin-hover"></i></a></li>
+                     <li><a class="linkedin" href="https://linkedin.com/in/bryantran97"><i class="fa fa-linkedin-square fa-1x fa-spin-hover"></i></a></li>
+                     <li><a class="blog" href="#"><i class="fa fa-pencil-square fa-1x fa-spin-hover"></i></a></li>
+                     <li><a class="email" href="mailto:bryantran97@gmail.com"><i class="fa fa-envelope-square fa-1x fa-spin-hover"></i></a></li>
+                  </ul>
+               </div>
+               <!-- End of ICON containers -->
+            </div>
+            <!-- End of SLIDER content -->
+         </div>
+         <!-- End of Third Page -->
+      </div>
+      <!-- End of FULL Page -->
+   </body>
+   <!-- End of BODY -->
+</html>

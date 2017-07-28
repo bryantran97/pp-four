@@ -1,0 +1,246 @@
+body{
+	font: 15px/1.5 Arial, Helvetica, sans-serif; /* changing font and font size */
+	padding:0;	/* padding and margin removes extra space */
+	margin:0;
+	background-color:#f4f4f4;
+}
+
+/* ---------------------------------------------------------------- */
+/* GLOBAL STUFF, FOR ALL PAGES */
+/* ---------------------------------------------------------------- */
+.container{ /* when you use . it means its a class, # sign means ID */
+	width:80%;
+	margin:auto; /* moves everything to the middle */
+	overflow:hidden;
+}
+
+ul{ /* ul stands for unordered list (basically the 3 links)*/
+	padding:0;
+	margin:0;
+}
+
+.button_1{
+	height:23px;
+	background:#e8491d;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+footer{ /* EDIT THIS LATER */
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+	padding-bottom:20px;
+	text-align:center;
+	color:#ffffff;
+	background-color:#e8491d;
+}
+
+/* ---------------------------------------------------------------- */
+/* INDEX PAGE STUFF */
+/* ---------------------------------------------------------------- */
+
+/* Header */
+
+header{
+	background:#35424a; /* sets header background dark gray */
+	color:#ffffff; /* sets header font color white */
+	padding-top:30px; /* adds space above text of header */
+	min-height: 70px;
+	border-bottom:#e8491d 3px solid; /* adds red solid line below header background */
+}
+
+/* Dealing with the links */
+
+header a{
+	color:#ffffff; /* link turns white now */
+	text-decoration:none; /* this removes underline of the text */
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+header li{ /* li = list items */
+	float:left;
+	display:inline; /* puts the listed items in horizontal fashion */
+	padding: 0 20px 0 20px; /* padding for top right bottom left */
+}
+
+header #branding{ /* Branding is an ID on the html file so use # sign */
+	float:left;
+}
+
+header #branding h1{ /* Set margin of HOME, ABOUT, CONTACT header to 0 */
+	margin:0;
+}
+
+header nav{ /* set navigation bar to the top right */
+	float:right;
+	margin-top:10px;
+}
+
+header .highlight, header .current a{ /* header .highlight color (wrapped in <span>), .current a for specific link */
+	color:#e8491d;
+	/* NOTE : in this case I used it for my first name BRYAN and used it for HOME */
+}
+
+header a:hover{
+	color:#cccccc;
+}
+
+/* Showcase */
+
+#showcase{ /* showcase is an ID in index.html */
+	min-height: 400px;
+	background:url('../images/showcase.jpg') no-repeat -100px ; /* adding background image for showcase */
+	text-allign:center;
+	color:#ffffff;
+}
+
+#showcase h1{ /* changing header size and placement for showcase */
+	margin-top:100px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+
+#showcase p{ /* changing showcase paragraph font size */
+	font-size:20px;
+}
+
+/* Newsletter */
+
+#newsletter{ /* adding background color and padding to newsletter area */
+	padding:15px;
+	color:#ffffff;
+	background:#35424a;
+}
+
+#newsletter h1{ /* move header to the left for newsletter */
+	float:left;
+}
+
+#newsletter form{ /* move email form to the right for newsletter */
+	float:right;
+	margin-top:25px;
+}
+
+#newsletter input[type="email"]{ /* Setting it as type : email */
+	padding:4px;
+	height:10px;
+	width:250px;
+}
+
+
+/* Box */
+
+
+#boxes{
+	margin-top:20px;
+}
+
+#boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding:10px;
+}
+
+#boxes .box img{
+	width:90px;
+}
+
+/* ---------------------------------------------------------------- */
+/* About Page
+/* ---------------------------------------------------------------- */
+
+/* SIDE BAR FOR ABOUT PAGE */
+
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+/* MAIN ARTICLE COLUMN FOR ABOUT PAGE */
+.dark{
+	padding:15px;
+	background:#35424a;
+	color:#ffffff;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+article#main-col{
+	float:left;
+	width:65%;
+	margin-top:40px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Contact page
+/* ---------------------------------------------------------------- */
+ul#services{
+	margin-top:50px;
+}
+
+ul#services li{ /* STYLING LIST ITEMS, NOT UL ITSELF */
+	margin-top:20px;
+	list-style: none;
+	padding:20px;
+	border: #cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+} 
+
+aside#sidebar{
+	margin-top:40px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width:90%;
+	padding:5px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Media Queries
+/* ---------------------------------------------------------------- */
+@media(max-width: 768px){ /* This is for resizing on Mobile Devices, 768 px is general size for tablets */
+	
+	header #branding, /* this part stacks the text on top of each other and makes it centered */
+	header nav,
+	header nav li,	
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float:none; /* this doesnt make it float, it puts it side by side */
+		text-align:center;
+		width:100%;
+	}
+
+	header{
+		padding-bottom:20px;
+	}
+
+	#showcase h1{ /* adds space between showcase header and border when size is lowered */
+		margin-top:20px;
+		text-align:center;
+	}
+
+	#showcase p{
+		text-align:center;
+	}
+
+	#newsletter button, .quote button{
+		margin-top:5px;
+		display:block;
+		width:100%;
+	}
+
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width:100%;
+	}
+}

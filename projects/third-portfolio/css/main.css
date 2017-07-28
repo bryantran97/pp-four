@@ -1,0 +1,497 @@
+/* Hey! Thanks for being curious and checking out my CSS file.
+I put tons of comments for you to be able to understand what's going on and for myself
+so I know what is what easier lol! Anyways, feel free to roam around. :) */
+/* Font Imports: Yantramanav, Montserrat, Open-Sans, and ProximaNova Bold */
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+/* ********************************************************* */
+/*                         GLOBALS                           */
+/* ********************************************************* */
+
+#container {
+    /* Anything wrapped in container */
+    
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 1em;
+}
+.section {
+    /* For all FULL pages */
+    
+    padding-bottom: 0%;
+}
+a {
+    /* Any links */
+    
+    text-decoration: none;
+    margin-left: 0px;
+}
+li {
+    /* Remove bullets from all LI's */
+    
+    list-style-type: none;
+}
+.hideme {
+    opacity: 0;
+}
+/* ********************************************************* */
+/*                          FIRST PAGE                       */
+/* ********************************************************* */
+
+#particles-js {
+    /* Particle effect for the First Page */
+    
+    z-index: 3;
+    /* Place this on top of everything */
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#tint-overlay {
+    /* Adds black tint over background img */
+    
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* 'a' < 1 means transparency */
+}
+.firstPage {
+    /* Adding background */
+    
+    background: url('../static/img/beautiful.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+#fpContent {
+    max-width: 1000px;
+    /* Allows header and button text to spread out nicely */
+    
+    margin: auto;
+    /* Centers it */
+    
+    text-align: center;
+}
+#fpContent h2 {
+    /* First line on the First page */
+    
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+    color: #d8d8d8;
+    /* Light Grey color */
+    
+    padding-top: 20%;
+    /* Gives space between TOP of PAGE and EVERYTHING else */
+}
+#fpContent h1 {
+    /* Text for name on Landing page */
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 250%;
+    font-weight: 700;
+    /* Bolder font */
+    
+    letter-spacing: 2px;
+    color: #ffffff;
+    /* White color */
+}
+#fpContent h3 {
+    /* Text for Mini BIO on landing page */
+    
+    font-family: 'Yantramanav', sans-serif;
+    /* Specific font, imported on the HTML page */
+    
+    font-size: 100%;
+    font-weight: 400;
+    /* Makes the font thinner/thicker */
+    
+    color: #d8d8d8;
+    padding-bottom: 10px;
+    /* Gives space from h3 to button */
+}
+.buttonContainer li {
+    /* buttons inside Container */
+    
+    display: inline-block;
+    padding: 7px;
+}
+.ghostButton {
+    /* For all Ghost Buttons */
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    /* This is to display buttons so they are horizontally alligned */
+    
+    width: 200px;
+    border: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color 0.2s ease-out,
+    /* Easing in animations for buttons */
+    
+    color 0.2s ease-out;
+}
+.projectsButton {
+    /* Specifically the projectsButton */
+    
+    background-color: #c68b49;
+    /* Light orange color */
+    
+    border: 1px solid #c68b49;
+}
+.ghostButton:hover,
+.ghostButton:active {
+    /* When you hover over the buttons */
+    
+    color: #fff;
+    /* Text is white */
+    
+    border: 1px solid #ba7b35;
+    /* Background and border turn dark orange */
+    
+    background-color: #ba7b35;
+    transition: background-color 0.2s ease-out,
+    /* Easing in animations for buttons */
+    
+    color 0.2s ease-in;
+}
+/* ********************************************************* */
+/*                         SECOND PAGE                       */
+/* ********************************************************* */
+
+.secondPage {
+    background-color: #efefef;
+    text-align: center;
+}
+#container-profile {
+    background-color: #e0e0e0;
+    width: 230px;
+    height: 500px;
+    padding: 1em;
+    display: inline-block;
+}
+#container-profile p {
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 700;
+}
+#container-about {
+    padding-left: 20px;
+    width: 700px;
+    height: 500px;
+    display: inline-block;
+}
+.secondPage img {
+    height: 200px;
+    width: 220px;
+    margin-right: auto;
+}
+.secondPage h2 {
+    /* to add gradient to the second page HEADER */
+    
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+.secondPage h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+.secondPage p {
+    /* Changing font/look of the ABOUT on second page */
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 2em auto;
+}
+#container-about p {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+/* ********************************************************* */
+/*                         THIRD PAGE                        */
+/* ********************************************************* */
+
+.thirdPage {
+    /* Gives third page background light grey color */
+    
+    background-color: #e0e0e0;
+}
+.thirdPage h1,
+h3 {
+    /* Header and description's Font Size & color */
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    /* make it thin */
+}
+.thirdPage h1 {
+    /* Third Page TITLE */
+    
+    font-size: 25px;
+}
+.thirdPage h3 {
+    /* Third Page SUBTITLE */
+    
+    font-size: 15px;
+    border-bottom: 1px solid #555;
+    /* Adds border at thr bottom of subtitle */
+    
+    padding-bottom: 20px;
+    /* Gives border and subtitle space between each other */
+}
+/* ~~~~~~~~~~~ */
+/*   SLIDERS   */
+/* ~~~~~~~~~~~ */
+
+.slider-img-wrapper {
+    /* The image-link itself */
+    
+    display: inline-block;
+    /* Allows images to be horizontally alligned */
+    
+    position: relative;
+    height: 325px;
+    width: 280px;
+    border-radius: 10px;
+    /* Fillets LINK's edges, adds a nice curve so it's not visible*/
+    
+    color: #ffffff;
+    /* White text on Slider IMG title/description */
+}
+.slider-img-wrapper:after {
+    /* Overlay of the Images on Slider */
+    
+    content: '\A';
+    /* link */
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.slider-img-wrapper:hover:after {
+    /* Makes the BLACK TINT Overlay less noticeable when mouse hovers*/
+    
+    opacity: .5;
+}
+img.slider-imgs {
+    /* Images of the Sliders */
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Fillets image's edges, adds a nice curve */
+}
+.slider-title {
+    /* Title of each slider IMG */
+    
+    z-index: 3;
+    /* This places it infront of all the overlaying, etc. */
+    
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    position: absolute;
+    left: 10%;
+    top: 12%;
+}
+.slider-description {
+    /* Slider description */
+    
+    z-index: 3;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    left: 10%;
+    top: 14%;
+}
+p.slider-body {
+    /* The TEXT size INSIDE the SLIDER (description) */
+    
+    font-size: .8em;
+    opacity: 0.8;
+}
+/* ********************************************************* */
+/*                          ICONS PAGE                       */
+/* ********************************************************* */
+
+.fa {
+    /* All font-awesome icons */
+    
+    font-size: 23px;
+    color: #232323;
+}
+.footer {
+    text-align: center;
+    margin: 0;
+    padding: 3em 0;
+}
+.footer > li {
+    display: inline;
+    padding: .7em;
+}
+.icons {
+    color: #232323;
+    font-size: 23px;
+}
+.fa-spin-hover:hover {
+    /* If you hover over it, it'll spin at .7 speed */
+    
+    animation: fa-spin .7s;
+    color: #aaaaaa;
+}
+/* ********************************************************* */
+/*                         MEDIA QUERIES                     */
+/* ********************************************************* */
+
+@media screen and (max-width: 1100px) {
+    #fpContent h2 {
+        font-size: 140%;
+        padding-top: 17%;
+    }
+    #fpContent h1 {
+        font-size: 225%;
+    }
+    #fpContent h3 {
+        font-size: 95%;
+    }
+    #container-profile {
+        display: none;
+    }
+    #container-about {
+        width: 80%;
+        height: 80%;
+    }
+    .secondPage h2 {
+        font-size: 20px;
+    }
+    .secondPage h1 {
+        font-size: 23px;
+    }
+    .secondPage p {
+        font-size: 17px;
+    }
+    .thirdPage h1 {
+        font-size: 23px;
+    }
+    .thirdPage h3 {
+        font-size: 14px;
+    }
+    /* Slider */
+    
+    .slider-title {
+        font-size: 12px;
+    }
+    .slider-description {
+        font-size: 17px;
+    }
+    .slider-img-wrapper {
+        height: 310px;
+        width: 275px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #fpContent h2 {
+        font-size: 130%;
+        padding-top: 25%;
+    }
+    #fpContent h1 {
+        font-size: 215%;
+    }
+    #fpContent h3 {
+        font-size: 90%;
+    }
+    .secondPage h2 {
+        font-size: 19px;
+    }
+    .secondPage h1 {
+        font-size: 22px;
+    }
+    .secondPage p {
+        font-size: 15px;
+    }
+    .thirdPage h3 {
+        font-size: 13px;
+    }
+    /* Slider */
+    
+    .slider-title {
+        font-size: 11px;
+    }
+    .slider-description {
+        font-size: 16px;
+    }
+    .slider-img-wrapper {
+        height: 300px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #fpContent h2 {
+        font-size: 120%;
+        padding-top: 30%;
+    }
+    #fpContent h1 {
+        font-size: 205%;
+    }
+    #fpContent h3 {
+        font-size: 85%;
+    }
+    .secondPage h2 {
+        font-size: 14px;
+    }
+    .secondPage h1 {
+        font-size: 20px;
+    }
+    .secondPage p {
+        font-size: 13px;
+    }
+    .thirdPage h1 {
+        font-size: 20px;
+    }
+    .thirdPage h3 {
+        font-size: 12px;
+    }
+    /* Slider */
+    
+    .slider-title {
+        font-size: 10px;
+    }
+    .slider-description {
+        font-size: 15px;
+    }
+    .slider-img-wrapper {
+        height: 250px;
+        width: 200px;
+    }
+}

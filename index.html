@@ -2,7 +2,7 @@
 <html>
 <!-- ** HEAD ** -->
 	<head>
-		<title>Bryan Tran | Personal Portfolio</title>
+		<title>Bryan Tran | Portfolio</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="icon" href="assets/img/favicon.ico">
 
@@ -23,6 +23,13 @@
 		<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
 		<!-- Bootstrap; NOTE: jQuery needs to be above Bootstrap, bootstrap requires jQuery -->
 		<script type="text/javascript" src="assets/js/frameworks/bootstrap.min.js"></script>
+
+		<!-- Loading page -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("body").addClass("animated fadeIn");
+			});
+		</script>
 	</head>
 <!-- ** BODY ** -->
 	<body>
@@ -45,12 +52,8 @@
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-col">
 					<div class="separator"></div>
 					<h1 id="name">Hi. I'm Bryan.</h1>
-					<h3>I'm a full-stack developer. I currently specialize in <strong>Front-End Development </strong> and do a lot of UI Design. I am currently practicing freelance. I am inspired my minimalism and I deeply care about how my sites look. I also really like bears.</h3>
-					<audio controls>
-					 <source src="assets/music/DarkCat-BubbleTea.mp3" type="audio/mp3">
-						Your browser does not support the audio element.
-					</audio>
-					<p id="song"> Song: Dark Cat - Bubble Tea </p>
+					<h3>I'm a full-stack developer. I currently specialize in <strong>Front-End Development </strong> and do a lot of <strong>UI Design</strong>. I am inspired by minimalism and I deeply care about how my sites look.</h3>
+					<h3>I also really like bears.</h3>
 					<br />
 					<h2 id="about">About</h2>
 						<span id="about-content" style="display: none">
@@ -62,44 +65,56 @@
 							<br />
 							<p>Personality type: I fluctuate between INFJ/ENFJ.
 							<br/>Hogwarts House: Huffle Puff<br />I am a loyal person, very kind, patient, and very open minded. I rarely ever get into an angry mood and I always try to create a positive atmosphere!</p>
+							<br />
+							<p>This website was inspired by this song -</p>
+							<audio controls>
+							<source src="assets/music/DarkCat-BubbleTea.mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+							</audio>
+							<p id="song"> Song: Dark Cat - Bubble Tea </p>
 						</span>
 					<h2 id="projects">Projects</h2>
 						<span id="projects-content" style="display: none">
+							<!-- Sites -->
 							<br />
-							<h2><a href="https://github.com/bryantran97/hanadfw" target="_blank">website</a></h2>
+							<h2>websites</h2>
 							<hr>
-							<img class="hoverImages" src="assets/img/hanadfw.png">
+							<h3>**Note: These are also all available for viewing on my Github </h3>
+							<br />
+							<a href="projects/hanadfw/hanadfw.html" target="_blank"><img class="hoverImages" src="assets/img/hanadfw.png"></a>
 							<h3>Practice Client Website</h3>
 							<br />
+							<a href="projects/third-portfolio/third-portfolio.html" target="_blank"><img class="hoverImages" src="assets/img/personal.png"></a>
+							<h3>Practice Personal Website (Third)</h3>
 							<br />
-							<h2><a href="https://github.com/bryantran97/bryantran97.github.io" target="_blank">website</a></h2>
+							<a href="projects/second-portfolio/second-portfolio.html" target="_blank"><img class="hoverImages" src="assets/img/secondpersonal.png"></a>
+							<h3>Practice Personal Website (Second)</h3>
+							<br />
+							<a href="projects/first-portfolio/first-portfolio.html" target="_blank"><img class="hoverImages" src="assets/img/firstpersonal.png"></a>
+							<h3>Practice Personal Website (First)</h3>
+							<br />
+							<br />
+
+							<!-- GAMES -->
+							<h2>Games</h2>
 							<hr>
-							<img class="hoverImages" src="assets/img/personal.png">
-							<h3>Practice Personal Website</h3>
-							<br />
-							<br />
-							<h2><a href="https://github.com/bryantran97/rgb-game" target="_blank">practice</a></h2>
-							<hr>
-							<img class="hoverImages" src="assets/img/colorgame.png">
+							<a href="projects/rgb-game/color-game.html" target="_blank"><img class="hoverImages" src="assets/img/colorgame.png"></a>
 							<h3>RGB Color Game using JavaScript</h3>
 							<br />
-							<br />
-							<h2><a href="https://github.com/bryantran97/todo-list" target="_blank">practice</a></h2>
-							<hr>
-							<img class="hoverImages" src="assets/img/todo.png">
-							<h3>To-do list using jQuery</h3>
-							<br />
-							<br />
-							<h2><a href="https://github.com/bryantran97/patatap-clone" target="_blank">practice</a></h2>
-							<hr>
-							<img class="hoverImages" src="assets/img/patatap.png">
+							<a href="projects/patatap-clone/circles.html" target="_blank"><img class="hoverImages" src="assets/img/patatap.png"></a>
 							<h3>Patatap Clone using paper.js &amp; howler.js</h3>
 							<br />
 							<br />
-							<h2><a href="https://github.com/bryantran97/grocerylist" target="_blank">practice</a></h2>
+
+							<!-- Web Apps -->
+							<h2>Web Apps</h2>
 							<hr>
-							<img class="hoverImages" src="assets/img/grocerylist.png">
+							<a href="projects/grocerylist/app/index.html" target="_blank"><img class="hoverImages" src="assets/img/grocerylist.png"></a>
 							<h3>Grocery List Web App written in JavaScript</h3>
+							<br />
+							<a href="projects/todo-list/todo.html" target="_blank"><img class="hoverImages" src="assets/img/todo.png" target="_blank"></a>
+							<h3>To-do list using jQuery</h3>
+							<br />
 						</span>
 
 					<h2 id="resume">Résumé</h2>

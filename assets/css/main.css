@@ -211,13 +211,11 @@ audio {
 	margin-top: 10px;
 	margin-bottom: 20px;
 	position: relative;
-	left: 20px;
 	width: 100%;
 }
 
 #song {
 	position: relative;
-	left: 20px;
 }
 
 
@@ -360,15 +358,18 @@ img.hoverImages:hover {
 	}
 
 	/* Remove any left-pushing when on smaller devices */
+	.left-col,
+	.right-col,
 	.right-col h1,
 	.right-col h2,
 	.right-col h3,
-	#song {
+	#song, #about-content, #projects-content {
 		left: 0;
+		right: 0;
 	}
 
-	#about-content, #projects-content {
-		left: 0;
+	#projects-content img {
+		height: 120px;
 	}
 
 	/* Remove the vertical border when small device */

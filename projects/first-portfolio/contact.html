@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"> <!-- Width based on device using -->
+		<meta name="description" content="Bryan's first website">
+		<meta name="keywords" content="Java, Python">
+		<meta name="author" content="Bryan Tran">
+
+		<title>Contact Information</title>
+		<link rel="stylesheet" href="./css/style.css"> <!-- This is to link it to the CSS file -->	
+	</head>
+
+	<body>
+		<header>
+			<div class="container"> <!-- Keeps the text/images within margin when changing size of window -->
+				<div id="branding">
+					<h1><span class="highlight">Bryan</span> Tran</h1> <!-- This is the main title on the page -->
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li> <!-- Unordered list, lists items -->
+						<li><a href="about.html">About</a></li>
+						<li class="current"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="main"> <!-- This is the main area of the about page, where all the text is at -->
+			<div class="container"> <!-- Wrapped in a container -->
+					<article id="main-col"> <!-- HTML5 Thing, creates an article -->
+						<ul id="services">
+							<li>
+								<h3> Read Me First! </h3>
+								<p> If you are interested in contacting me, please use the two options below. I respond quickest by email (school email) and will respond typically within 24 hours. I look forward to discussing things with you! Thanks.</p>
+								<p> If you want to contact me through STEAM/BattleNET, or play games with me I'll post those info down below as well. </p>
+							</li>
+
+							<li>
+								<h3> Contact Info </h3>
+								<p> Personal Email: bryantran97@gmail.com </p>
+								<p> School Email: bmt150030@utdallas.edu </p>
+								<p> Phone Number (Cell): 469-347-1077 </p>
+							</li>
+
+							<li>
+								<h3> Game Usernames / IDs </h3>
+								<p> Steam account: buhbuhbuhbryan </p>
+								<p> Main Battlenet ID: OfficerBear#11410 </p>
+								<p> Alternate Battlenet ID: LtBeefy#1652 </p>
+							</li>
+						</ul>
+					</article>
+
+					<aside id="sidebar"> <!-- This is a side bar next to the article -->
+						<h3>Get a Quote</h3>
+						<div class="dark">
+							<form class="quote"> <!-- create a form called quote -->
+								<div>
+									<label>Name</label><br> <!-- br means line break -->
+									<input type="text" placeholder="Name">
+								</div>
+
+								<div>
+									<label>Email</label><br> <!-- br means line break -->
+									<input type="text" placeholder="Email Address">
+								</div>
+
+								<div>
+									<label>Message</label><br> <!-- br means line break -->
+									<textarea placeholder="Message"></textarea>
+								</div>
+								<button class="button_1" type="submit">Send</button>
+							</form>
+						</div>
+					</aside>
+			</div>
+		</section>
+
+		<footer> <!-- Footer for the end of the page, copy right stuff -->
+			<p>Bryan Tran Web Developer, Copyright &copy; 2017</p>
+		</footer>
+
+	</body>
+</html>

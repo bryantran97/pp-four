@@ -1,0 +1,89 @@
+/* THIS STILL CSS FILE IS FOR DESIGNING SPECIFICALLY NON-BOOSTRAP ITEMS */
+/* NOTE TO SELF : FOR ID'S USE #ID, FOR CLASSES USE .CLASS */
+
+/* ------------------------------------------------------------------------*/
+/* For Index PAGE */
+/* ------------------------------------------------------------------------*/
+
+/* Navigation bar stuff */
+body #index,
+body #about,
+body #contact{
+	color:#ffffff; /* link turns white now */
+	text-decoration:none; /* this removes underline of the text */
+	text-transform:uppercase;
+	font-size:13px;
+  float:right;
+  padding: 15px 20px 0 20px; /* padding for top right bottom left */
+  }
+}
+
+/* This is for the small icons, I named them box because they are box shaped */
+#icons{
+	margin-top:20px;
+}
+
+#icons .separateicon
+{
+	float:left;
+	text-align: center;
+	width:20%;
+	padding-bottom:50px;
+  padding-top:50px;
+}
+
+#icons a.github:hover,
+#icons a.linkedin:hover,
+#icons a.resume:hover,
+#icons a.blog:hover,
+#icons a.steam:hover{ /* Give the icon link a light grey color when untouched */
+  color:#000000;
+}
+
+/* #class a.main-nav-item:hover | Template to change colors for certain icons */
+
+#icons a.github{ /* hover color for github */
+	color:#ff4f81;
+}
+
+#icons a.linkedin{ /* hover color for linkedin */
+	color:#ff6c5f;
+}
+
+#icons a.resume{ /* hover color for resume */
+	color:#ffc168;
+}
+
+#icons a.blog{ /* hover color for blog */
+	color:#2dde98;
+}
+
+#icons a.steam{ /* hover color for steam */
+	color:#1cc7d0;
+}
+
+
+#showcase {
+	text-align:center;
+	padding-top:100px;
+	color:#ffffff
+}
+
+.jumbotron{ /* adding background image for showcase */
+	position:relative;
+	background:url('../img/sunset.jpg') no-repeat 0px -300px;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+	min-height: 500px;
+}
+
+/* ---------- */
+@media(max-width: 768px){ /* This is for resizing on Mobile Devices, 768 px is general size for tablets */
+
+	#icons .separateicon
+  {
+		float:none; /* this doesnt make it float, it puts it side by side */
+		text-align:center;
+		width:100%;
+	}

@@ -1,0 +1,335 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+/* ================================= */
+/*              Globals              */
+/* ================================= */
+
+.center {
+	float: none;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ================================= */
+/*           Banner (First)          */
+/* ================================= */
+
+.banner {
+	height: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-content { /* This visually centers the text on banner */
+	margin-top: 150px;
+	color: white;
+}
+
+.banner-content h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 45px; font-weight: 700;
+	text-transform: uppercase;
+}
+
+#top-border-logo {
+	border-top: 5px solid #fff;
+	width: 400px;
+}
+
+#bottom-border-logo {
+	border-top: 5px solid #fff;
+	width: 400px;
+	padding-bottom: 20px;
+}
+
+.banner-content h3 {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 18px; font-weight: 200;
+}
+
+.banner-content a {
+	display: inline;
+	font-family: 'Yantramanav', sans-serif;
+	color: white;
+	font-size: 20px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 3px solid #fff;
+    text-decoration: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	height: 50px;
+	width: 150px;
+	padding: 10px 40px 10px 40px;
+}
+
+.banner-content a:hover {
+	color: white;
+	border: solid white;
+	background: #b23739;
+	text-decoration: none;
+	transition: ease .5s;
+}
+
+#hours_div {
+	margin-right: 20px;
+}
+
+#contacts_div {
+	margin-left: 20px;
+}
+
+/* ================================= */
+/*          Info Page (Second)       */
+/* ================================= */
+
+.info {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	background-color: #fff;
+	padding: 50px 0;
+	height: 100%;
+}
+
+.hours h4 {
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.location h4 {
+	color: #000;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 30px;
+}
+
+.location {
+	color: #000;
+	padding-bottom: 20px;
+}
+
+.location hr {
+	color: #000;
+	width: 350px;
+	border-bottom: 1px solid #333333;
+}
+
+.box {
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 5px 20px 5px 20px;
+	width: 100%;
+	height: 600px;
+}
+
+.box h4, .box p {
+	margin-top: 50px;
+}
+
+.box hr {
+	width: 200px;
+}
+
+.hours a {
+	display:inline-block; 
+	margin:0;
+	text-transform:uppercase;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 800;
+	color: #ff7070;
+	cursor: pointer;
+}
+
+#menu-link:hover {
+	text-decoration: none;
+	transition: ease .3s;
+	color: #fff;
+}
+
+#menu-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #fff;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+#menu-link:hover:after { 
+	transform: scaleX(1); 
+}
+
+#map-link:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* ================================= */
+/*         Contact Page (Second)     */
+/* ================================= */
+
+.contact {
+	margin-top: 75px;
+	padding-top: 50px;
+	font-family: 'Yantramanav', sans-serif;
+	color: #fff;
+	background-color: #333;
+}
+
+#bottom-border-contact {
+	content:'';
+	height: 2px;
+	width: 300px;
+}
+.contact-col {
+	width: 50%;
+	height: 550px;
+}
+
+.contact-col {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.fa-yelp:hover,
+.fa-facebook-square:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.fa-yelp {
+	color: red;
+}
+
+.fa-facebook {
+	color: blue;
+}
+
+
+/* ================================= */
+/*         Map Of Place       		 */
+/* ================================= */
+
+.maps {
+	background-color: #303030;
+	padding-bottom: 50px;
+}
+
+.map-content h1 {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 30px;
+}
+
+.directions-input {
+	width: 240px;
+}
+
+
+/* ================================= */
+/*           Media Queries           */
+/* ================================= */
+@media(min-width:992px){
+	/* Banner */
+	.banner {
+		height: 450px;
+	}
+	.banner-content {
+		margin-top: 75px;
+	}
+}
+
+@media(min-width:768px){
+	/* Banner */
+	.banner {
+		height: 425px;
+	}
+	.banner-content {
+		margin-top: 60px;
+	}
+	.banner-content h1 {
+		font-size: 35px;
+	}
+}
+@media(max-width:767px){
+	/* Banner */
+	.banner {
+		height: 400px;
+	}
+	.banner-content {
+		margin-top: 45px;
+	}
+	.banner-content h1 {
+		font-size: 35px;
+	}
+	.banner-content h3 {
+		margin-top: 13px;
+	}
+
+	#top-border-logo {
+		width: 300px;
+	}
+
+	#bottom-border-logo {
+		width: 300px;
+	}
+
+	iframe {
+		width: 300px;
+	}
+	.maps:last-of-type{
+	margin-top: 60px;
+	}
+
+	#hours_div {
+	margin-right: 0px;
+}
+
+	#contacts_div {
+		margin-left: 0px;
+	}
+		.contact-col {
+		height: 650px;
+	}
+}
+
+@media(max-width:442px) {
+
+	#top-border-logo {
+		width: 200px;
+	}
+	#bottom-border-logo {
+		width: 200px;
+	}	
+	.banner-content a {
+		display: none;
+	}
+	iframe {
+		width: 200px;
+	}
+
+	.location hr {
+		width: 200px;
+	}
+
+	.directions-input {
+		width: 150px;
+		margin-bottom: 5px;
+	}
+
+	.box {
+		height:650px;
+	}
+
+	.contact-col {
+		height: 700px;
+	}
+}

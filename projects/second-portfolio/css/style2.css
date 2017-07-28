@@ -1,0 +1,57 @@
+/* Navigation bar stuff */
+body #index,
+body #about,
+body #contact{
+	color:#ffffff; /* link turns white now */
+	text-decoration:none; /* this removes underline of the text */
+	text-transform:uppercase;
+	font-size:13px;
+  float:right;
+  padding: 15px 20px 0 20px; /* padding for top right bottom left */
+  }
+}
+
+.container{ /* when you use . it means its a class, # sign means ID */
+	width:80%;
+	margin:auto; /* moves everything to the middle */
+	overflow:hidden;
+}
+
+aside#sidebar{
+	float:right;
+	width:30%;
+}
+
+/* MAIN ARTICLE COLUMN FOR ABOUT PAGE */
+
+article#main-col{
+	float:left;
+	width:60%;
+}
+
+
+/* CONTACT PAGE */
+
+ul#services{
+  text-align:center;
+  width: 165%;
+  padding: 10px;
+}
+
+ul#services li{ /* STYLING LIST ITEMS, NOT UL ITSELF */
+	margin-top:10px;
+	list-style: none;
+	padding:20px;
+	border: #cccccc solid 1px;
+	background:#e6e6e6;
+}
+
+@media(max-width: 768px){
+ul#services,
+ul#services li,
+article#main-col,
+aside#sidebar{
+  float:none; /* this doesnt make it float, it puts it side by side */
+  text-align:center;
+  width:100%;
+}

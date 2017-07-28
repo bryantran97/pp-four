@@ -571,6 +571,9 @@
 
 .fadeIn {
   animation-name: fadeIn;
+  -webkit-animation-duration: 2.5s;
+-moz-animation-duration: 2.5s;
+-ms-transition-animation-duration: 2.5s;
 }
 
 @keyframes fadeInDown {
